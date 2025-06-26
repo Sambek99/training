@@ -6,8 +6,10 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Tema CLARO (Valores por defecto si no se aplica .dark) */
+    /* Si tu app es mayormente oscura, puedes hacer que el fondo 'claro' también sea oscuro */
+    --background: 222.2 84% 4.9%; /* Este es el color base de Shadcn para el modo CLARO */
+    --foreground: 210 40% 98%;    /* Ajustado para texto blanco en fondo oscuro, si es necesario */
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -54,8 +56,10 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* --- ¡MODIFICA ESTAS LÍNEAS EN TU TEMA OSCURO! --- */
+    /* Convertimos #14171b a HSL: hsl(218, 25%, 9.6%) */
+    --background: 218 25% 9.6%; /* Nuevo fondo oscuro para el tema 'dark' */
+    --foreground: 210 40% 98%; /* Texto blanco para este fondo oscuro */
 
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
@@ -98,6 +102,19 @@
   }
 
   body {
+    /* Aquí se aplican las variables --background y --foreground */
     @apply bg-background text-foreground;
+    /* Aseguramos que no haya márgenes o paddings predeterminados en el body */
+    margin: 0;
+    padding: 0;
+    /* Aseguramos que el body ocupe al menos el 100% de la altura y ancho */
+    min-height: 100vh; /* Usa min-height para que se expanda con el contenido */
+    width: 100%;
+  }
+  
+  /* Asegúrate de que el elemento raíz de tu app (normalmente #root) también tenga la altura completa */
+  #root {
+    min-height: 100vh;
+    width: 100%;
   }
 }
