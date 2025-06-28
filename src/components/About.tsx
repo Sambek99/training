@@ -63,7 +63,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {processes.map((process, index) => (
             <div key={index} className="space-y-4">
-              <h3 className="text-2xl font-light text-gray-500 mb-4">
+              <h3 className="text-2xl font-light text-white mb-4">
                 {process.title}
               </h3>
               <p className="text-gray-500 leading-relaxed">
