@@ -50,7 +50,7 @@ const Services = () => {
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-white">
-                Transforma tu cuerpo, tu salud y tu energía donde estés. Logra resultados reales sin ir al gimnasio, todo a tu ritmo.
+                Transforma tu cuerpo, tu salud y tu energía donde estés. Logra resultados reales sin depender del gym, todo a tu ritmo.
               </h1>
             </div>
             <div>
