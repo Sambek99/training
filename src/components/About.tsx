@@ -54,9 +54,13 @@ const About = () => {
           </div>
 
           {/* Right column - Photo */}
-          <div className="relative">
-            <div className="bg-gradient-to-br from-orange-400 to-red-500 rounded-lg aspect-[4/5] w-full"></div>
-          </div>
+            <div className="relative flex justify-center items-center">
+            <img
+              src="/images/alain-jimenez-hero.jpg"
+              alt="Photo by Alain Jimenez"
+              className="rounded-lg aspect-[4/5] w-[90%] object-cover"
+            />
+            </div>
         </div>
 
         {/* Process items */}
