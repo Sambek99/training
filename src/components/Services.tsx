@@ -10,7 +10,7 @@ const Services = () => {
     },
     {
       icon: 'branding',
-      title: 'Branding', 
+      title: 'Branding',
       description: 'Deserunt rerum perspiciatis quaerat quam numquam assumenda neque. Quis dolores totam voluptatibus molestiae non. Quae exercitationem cum numquam repudiandae. Beatae eum quae. Ut ex unde rem quod ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.'
     },
     {
@@ -43,23 +43,21 @@ const Services = () => {
           <div className="flex items-center gap-8 mb-12">
             <span className="text-6xl lg:text-8xl font-light text-gray-200">02</span>
             <h3 className="text-sm uppercase tracking-wider text-[#DA1035] font-medium">
-              Our Expertise
+              Entrenamiento Online Personalizado
             </h3>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-white">
-                Deserunt rerum perspiciatis quaerat quam numquam assumenda neque. 
-                Quis dolores totam voluptatibus.
+                Transforma tu cuerpo, tu salud y tu energía donde estés. Logra resultados reales sin ir al gimnasio, todo a tu ritmo.
               </h1>
             </div>
             <div>
               <p className="text-xl text-gray-500 leading-relaxed">
-                Velit deleniti harum sit beatae sint repellendus expedita. Omnis possimus 
-                sed rerum tenetur ea ab aut minima magnam. Deserunt sit cupiditate 
-                similique eveniet earum. Consectetur dolores maxime quisquam voluptate magni.
-                Ut ex unde rem quod ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
+                Como tu entrenador, te guiaré con un plan adaptado a tus objetivos, tu nivel y el equipo disponible, sin importar tu
+                punto de partida. Es 100% online, con el mismo compromiso y seguimiento personalizado que un entrenamiento presencial, 
+                asegurando que alcances tus metas de forma efectiva y duradera.
               </p>
             </div>
           </div>
@@ -73,11 +71,11 @@ const Services = () => {
               <div className="w-16 h-16 bg-orange-500 rounded-lg mb-6 flex items-center justify-center">
                 <div className="w-8 h-8 bg-white rounded opacity-80"></div>
               </div>
-              
+
               <h3 className="text-2xl font-light text-gray-900 mb-4">
                 {service.title}
               </h3>
-              
+
               <p className="text-gray-600 leading-relaxed">
                 {service.description}
               </p>
