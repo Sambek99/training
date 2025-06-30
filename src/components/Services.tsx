@@ -66,17 +66,20 @@ const Services = () => {
         {/* Services grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow duration-300">
+            <div
+              key={index}
+              className="bg-[#23272f] p-8 rounded-lg hover:shadow-lg transition-shadow duration-300 border border-[#23272f] hover:border-[#DA1035]"
+            >
               {/* Service icon placeholder */}
-              <div className="w-16 h-16 bg-orange-500 rounded-lg mb-6 flex items-center justify-center">
+              <div className="w-16 h-16 bg-[#DA1035] rounded-lg mb-6 flex items-center justify-center">
                 <div className="w-8 h-8 bg-white rounded opacity-80"></div>
               </div>
 
-              <h3 className="text-2xl font-light text-gray-900 mb-4">
+              <h3 className="text-2xl font-light text-white mb-4">
                 {service.title}
               </h3>
 
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-400 leading-relaxed">
                 {service.description}
               </p>
             </div>

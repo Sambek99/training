@@ -64,10 +64,10 @@ const Hero = () => {
             {/* Aquí es donde se muestra la frase dinámica */}
             <p className="text-xl md:text-2xl leading-relaxed text-gray-300">
               {currentPhrase.split('<br />').map((line, index) => (
-                  <React.Fragment key={index}>
-                      {line}
-                      {index < currentPhrase.split('<br />').length - 1 && <br />}
-                  </React.Fragment>
+                <React.Fragment key={index}>
+                  {line}
+                  {index < currentPhrase.split('<br />').length - 1 && <br />}
+                </React.Fragment>
               ))}
             </p>
 

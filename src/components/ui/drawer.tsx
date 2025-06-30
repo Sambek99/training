@@ -3,6 +3,12 @@ import { Drawer as DrawerPrimitive } from "vaul"
 
 import { cn } from "@/lib/utils"
 
+import {
+  DrawerTrigger, // Solo necesitas DrawerTrigger para el botón en sí
+} from '@/components/ui/drawer'; // Asegúrate de que esta ruta sea correcta para tu proyecto
+
+import { Play } from 'lucide-react'; // Si estás usando íconos de Lucide
+
 const Drawer = ({
   shouldScaleBackground = true,
   ...props
