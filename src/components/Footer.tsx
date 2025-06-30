@@ -4,10 +4,7 @@ import { ChevronUp } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { name: 'Facebook', href: '#' },
-    { name: 'Twitter', href: '#' },
     { name: 'Instagram', href: '#' },
-    { name: 'Dribbble', href: '#' }
   ];
 
   return (
@@ -38,7 +35,7 @@ const Footer = () => {
               {/* Social links */}
               <div>
                 <h4 className="text-sm uppercase tracking-wider text-white mb-6">
-                  Follow Us
+                  Síguenos
                 </h4>
                 <ul className="space-y-3">
                   {socialLinks.map((link) => (
@@ -62,33 +59,34 @@ const Footer = () => {
               href="mailto:hello@flare.com" 
               className="block w-full bg-white text-black hover:bg-black hover:text-white text-center py-4 px-6 rounded text-lg font-medium transition-colors duration-200"
             >
-              Let's Talk
+              Hablemos
             </a>
 
             <div className="space-y-2 text-sm text-white">
               <p>Copyright Flare 2020</p>
               <p>
-                Design by{' '}
+                Diseño por{' '}
                 <a
                   href="https://www.creative-tim.com/"
                   className="text-white hover:text-gray-200 transition-colors duration-200"
                 >
                   Creative Tim
                 </a>{' '}
-                Distribution By{' '}
+                Distribución por{' '}
                 <a
                   href="https://colorlib.com"
                   className="text-white hover:text-gray-200 transition-colors duration-200"
                 >
                   Colorlib
                 </a>
+                {' '}| Rediseñado por Sambek99
               </p>
             </div>
           </div>
         </div>
 
         {/* Back to top */}
-        <div className="mt-16 pt-8 border-t border-gray-800 text-center">
+        <div className="mt-16 pt-8 text-center">
           <a 
             href="#top" 
             className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-200 group"

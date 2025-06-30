@@ -14,9 +14,8 @@ const Navigation = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#14171b] text-white">
-      <div className="flex items-center mx-10 justify-between h-20 px-6 lg:px-8"> {/* Padding horizontal aplicado directamente aquí */}
-        {/* Contenedor para el contenido principal del header, limitado por max-w-7xl y centrado */}
-        <div className="mx-auto flex items-center justify-between w-full"> {/* Ahora sí, este div toma todo el ancho disponible y centra el contenido */}
+      <div className="flex items-center mx-10 justify-between h-20 px-6 lg:px-8">
+        <div className="mx-auto flex items-center justify-between w-full">
           {/* Grupo de Logo y Navegación */}
           <div className="flex items-center space-x-8">
             {/* Logo */}
@@ -26,8 +25,8 @@ const Navigation = () => {
               </a>
             </div>
 
-            {/* Desktop Navigation Links - ESTO ESTÁ RESTAURADO A TU VERSIÓN ORIGINAL */}
-            <nav className="hidden md:flex items-center space-x-8">
+            {/* Desktop Navigation Links: Se ocultarán en 'custom_lg' (950px) y abajo */}
+            <nav className="hidden custom_lg:flex items-center space-x-8">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
@@ -38,21 +37,21 @@ const Navigation = () => {
                 </a>
               ))}
             </nav>
-          </div> {/* CIERRE CORREGIDO DEL DIV flex items-center space-x-8 */}
+          </div>
 
           {/* Grupo del Botón de Contacto y Botón de Menú Móvil */}
           <div className="flex items-center ml-auto">
-            {/* Botón de Contacto - Solo visible en desktop (md:) */}
+            {/* Botón de Contacto: Solo visible en 'custom_lg' (950px) y arriba */}
             <a
               href="mailto:hello@flare.com"
-              className="hidden md:flex bg-[#DA1035] hover:bg-black text-white px-8 py-3 rounded text-sm font-medium transition-colors duration-200 items-center gap-2 uppercase tracking-wider"
+              className="hidden custom_lg:flex bg-[#DA1035] hover:bg-black text-white px-8 py-3 rounded text-sm font-medium transition-colors duration-200 items-center gap-2 uppercase tracking-wider"
             >
               <Send size={16} />
               Contactenos
             </a>
 
-            {/* Mobile menu button - Solo visible en móvil (md:hidden) */}
-            <div className="md:hidden ml-4">
+            {/* Mobile menu button: Solo visible en pantallas menores a 'custom_lg' (950px) */}
+            <div className="custom_lg:hidden ml-4">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-gray-300 hover:text-white focus:outline-none"
@@ -61,16 +60,16 @@ const Navigation = () => {
               </button>
             </div>
           </div>
-        </div> {/* CIERRE CORREGIDO DEL DIV mx-auto flex items-center justify-between w-full */}
-      </div> {/* CIERRE CORREGIDO DEL DIV flex items-center mx-10 justify-between h-20 px-6 lg:px-8 */}
+        </div>
+      </div>
 
       {/* --- Menú de Navegación Móvil (con animación de despliegue) --- */}
       <nav
-        className={`md:hidden bg-[#14171b] overflow-hidden transition-all duration-500 ease-in-out ${
+        className={`custom_lg:hidden bg-[#14171b] overflow-hidden transition-all duration-500 ease-in-out ${
           isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="flex flex-col items-center py-4"> {/* Añadimos padding vertical aquí */}
+        <div className="flex flex-col items-center py-4">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -81,7 +80,6 @@ const Navigation = () => {
               {link.label}
             </a>
           ))}
-          {/* Botón de Contacto también en el menú móvil */}
           <a
             href="mailto:hello@flare.com"
             className="mt-4 bg-[#DA1035] hover:bg-black text-white px-8 py-3 rounded text-sm font-medium transition-colors duration-200 items-center gap-2 uppercase tracking-wider flex justify-center w-auto"
