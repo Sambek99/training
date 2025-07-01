@@ -56,6 +56,12 @@ const Hero = () => {
   return (
     <section
       id="hero"
+      className="relative
+                 min-h-[750px]
+                 sm:min-h-[700px]
+                 md:min-h-[800px]
+                 custom_lg:min-h-screen
+                 bg-gray-900 text-white flex items-center overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
         <Carousel
