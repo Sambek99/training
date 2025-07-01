@@ -1,52 +1,52 @@
 import React from 'react';
-import { Check, X } from 'lucide-react'; // Importing Check for features, X for unavailable features
+import { Check, X } from 'lucide-react';
 
 const Subscriptions = () => {
   const plans = [
     {
-      name: "Basic Plan",
+      name: "Plan Básico",
       price: "$29",
-      period: "/month",
-      description: "Ideal for individuals starting their fitness journey.",
+      period: "/mes",
+      description: "Ideal para personas que inician su viaje fitness.",
       features: [
-        { text: "Access to basic workout routines", available: true },
-        { text: "Monthly fitness tips via email", available: true },
-        { text: "Community forum access", available: true },
-        { text: "Personalized diet plans", available: false },
-        { text: "1-on-1 coach support", available: false }
+        { text: "Acceso a rutinas básicas de entrenamiento", available: true },
+        { text: "Consejos de fitness mensuales por correo", available: true },
+        { text: "Acceso al foro de la comunidad", available: true },
+        { text: "Planes de dieta personalizados", available: false },
+        { text: "Soporte de coach 1-a-1", available: false }
       ],
-      buttonText: "Choose Basic",
-      buttonClass: "bg-gray-700 hover:bg-gray-800" // Example color for button
+      buttonText: "Elegir Básico",
+      buttonClass: "bg-gray-700 hover:bg-gray-800"
     },
     {
-      name: "Pro Plan",
+      name: "Plan Pro",
       price: "$59",
-      period: "/month",
-      description: "Perfect for those looking to intensify their training.",
+      period: "/mes",
+      description: "Perfecto para quienes buscan intensificar su entrenamiento.",
       features: [
-        { text: "Access to all workout routines", available: true },
-        { text: "Weekly advanced fitness tips", available: true },
-        { text: "Priority community support", available: true },
-        { text: "Personalized diet plans", available: true },
-        { text: "1-on-1 coach support (2 sessions/month)", available: false }
+        { text: "Acceso a todas las rutinas de entrenamiento", available: true },
+        { text: "Consejos avanzados de fitness semanales", available: true },
+        { text: "Soporte prioritario en la comunidad", available: true },
+        { text: "Planes de dieta personalizados", available: true },
+        { text: "Soporte de coach 1-a-1 (2 sesiones/mes)", available: false }
       ],
-      buttonText: "Go Pro",
-      buttonClass: "bg-[#DA1035] hover:bg-[#B30D2B]" // Primary color for button
+      buttonText: "Elegir Pro",
+      buttonClass: "bg-[#DA1035] hover:bg-[#B30D2B]"
     },
     {
-      name: "Premium Plan",
+      name: "Plan Premium",
       price: "$99",
-      period: "/month",
-      description: "For dedicated individuals seeking full support and guidance.",
+      period: "/mes",
+      description: "Para personas dedicadas que buscan apoyo y guía total.",
       features: [
-        { text: "Access to all workout routines", available: true },
-        { text: "Daily advanced fitness tips & insights", available: true },
-        { text: "Exclusive member community & support", available: true },
-        { text: "Fully personalized diet & meal plans", available: true },
-        { text: "1-on-1 coach support (4 sessions/month)", available: true }
+        { text: "Acceso a todas las rutinas de entrenamiento", available: true },
+        { text: "Consejos e insights avanzados diarios", available: true },
+        { text: "Comunidad exclusiva y soporte", available: true },
+        { text: "Planes de dieta y comidas totalmente personalizados", available: true },
+        { text: "Soporte de coach 1-a-1 (4 sesiones/mes)", available: true }
       ],
-      buttonText: "Get Premium",
-      buttonClass: "bg-gray-700 hover:bg-gray-800" // Example color for button
+      buttonText: "Elegir Premium",
+      buttonClass: "bg-gray-700 hover:bg-gray-800"
     }
   ];
 
@@ -56,10 +56,10 @@ const Subscriptions = () => {
         {/* Main heading */}
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight max-w-4xl mx-auto">
-            Find the Perfect Plan for Your Fitness Journey
+            Encuentra el Plan Perfecto para tu Viaje Fitness
           </h1>
           <p className="mt-4 text-lg text-gray-400">
-            Choose a subscription that fits your goals and level of support.
+            Elige una suscripción que se adapte a tus objetivos y nivel de apoyo.
           </p>
         </div>
 
@@ -91,7 +91,7 @@ const Subscriptions = () => {
                 </ul>
               </div>
               <a
-                href="#" // You'd link this to your subscription checkout page
+                href="#"
                 className={`w-full text-white py-3 px-6 rounded text-lg font-medium text-center transition-colors duration-200 ${plan.buttonClass}`}
               >
                 {plan.buttonText}

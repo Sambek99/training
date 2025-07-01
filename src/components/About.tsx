@@ -56,7 +56,7 @@ const About = () => {
           {/* Right column - Photo */}
             <div className="relative flex justify-center items-center">
             <img
-              src="/images/alain-jimenez-hero.jpg"
+              src="/images/alain-jimenez-hero.jpeg"
               alt="Photo by Alain Jimenez"
               className="rounded-lg aspect-[4/5] w-[90%] object-cover"
             />
