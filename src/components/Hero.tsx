@@ -23,7 +23,7 @@ const frases = [
 ];
 
 const heroBackgroundImages = [
-  { src: '/images/carousel/1.jpeg', alt: 'Alain sentnado' },
+  { src: '/images/carousel/1.jpeg', alt: 'Alain sentado' },
   { src: '/images/carousel/2.jpeg', alt: 'Alain retrado' },
   { src: '/images/carousel/3.jpeg', alt: 'Alain retrado' },
 ];
