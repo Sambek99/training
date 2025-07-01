@@ -57,7 +57,7 @@ const Hero = () => {
     <section
       id="hero"
       className="relative
-                 min-h-[850px]
+                 min-h-[600px]
                  sm:min-h-[700px]
                  md:min-h-[800px]
                  custom_lg:min-h-screen
