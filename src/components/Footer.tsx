@@ -4,7 +4,7 @@ import { ChevronUp } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { name: 'Instagram', href: '#' },
+    { name: 'Instagram', href: 'https://www.instagram.com/alain_jg/' },
   ];
 
   return (
@@ -17,17 +17,17 @@ const Footer = () => {
               {/* Address */}
               <div>
                 <h4 className="text-sm uppercase tracking-wider text-white mb-6">
-                  Where to Find Us
+                  Dónde encontrarnos
                 </h4>
                 <div className="space-y-2 text-white">
-                  <p>1600 Amphitheatre Parkway</p>
-                  <p>Mountain View, California</p>
-                  <p>94043 US</p>
+                  <p>Av. 9 de Octubre 100</p>
+                  <p>Guayaquil, Guayas</p>
+                  <p>090313 EC</p>
                   <a 
-                    href="tel:197-543-2345" 
+                    href="tel:098-765-4321" 
                     className="text-white hover:text-gray-300 transition-colors duration-200"
                   >
-                    +197 543 2345
+                    098 765 4321
                   </a>
                 </div>
               </div>
@@ -41,8 +41,8 @@ const Footer = () => {
                   {socialLinks.map((link) => (
                     <li key={link.name}>
                       <a 
-                        href={link.href}
-                        className="text-gray-300 hover:text-white transition-colors duration-200"
+                        href={link.href} 
+                        target="_blank" className="text-gray-300 hover:text-white transition-colors duration-200"
                       >
                         {link.name}
                       </a>

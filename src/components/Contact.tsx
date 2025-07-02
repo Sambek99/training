@@ -21,7 +21,7 @@ const Contact = () => {
             href="mailto:hello@flare.com" 
             className="text-3xl md:text-4xl lg:text-5xl font-light text-[#DA1035] hover:text-[#BF0E30] transition-colors duration-200"
           >
-            hello@flare.com
+            hello@training.com
           </a>
         </div>
       </div>

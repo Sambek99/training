@@ -5,14 +5,14 @@ const Subscriptions = () => {
   const plans = [
     {
       name: "Plan Básico",
-      price: "$29",
+      price: "$20",
       period: "/mes",
       description: "Ideal para personas que inician su viaje fitness.",
       features: [
         { text: "Acceso a rutinas básicas de entrenamiento", available: true },
-        { text: "Consejos de fitness mensuales por correo", available: true },
+        { text: "Consejos de fitness mensuales por Whatsapp", available: true },
         { text: "Acceso al foro de la comunidad", available: true },
-        { text: "Planes de dieta personalizados", available: false },
+        { text: "Seguimiento de progreso mensual", available: false },
         { text: "Soporte de coach 1-a-1", available: false }
       ],
       buttonText: "Elegir Básico",
@@ -20,14 +20,14 @@ const Subscriptions = () => {
     },
     {
       name: "Plan Pro",
-      price: "$59",
+      price: "$30",
       period: "/mes",
       description: "Perfecto para quienes buscan intensificar su entrenamiento.",
       features: [
         { text: "Acceso a todas las rutinas de entrenamiento", available: true },
         { text: "Consejos avanzados de fitness semanales", available: true },
         { text: "Soporte prioritario en la comunidad", available: true },
-        { text: "Planes de dieta personalizados", available: true },
+        { text: "Seguimiento de progreso semanal", available: true },
         { text: "Soporte de coach 1-a-1 (2 sesiones/mes)", available: false }
       ],
       buttonText: "Elegir Pro",
@@ -35,14 +35,14 @@ const Subscriptions = () => {
     },
     {
       name: "Plan Premium",
-      price: "$99",
+      price: "$40",
       period: "/mes",
       description: "Para personas dedicadas que buscan apoyo y guía total.",
       features: [
         { text: "Acceso a todas las rutinas de entrenamiento", available: true },
         { text: "Consejos e insights avanzados diarios", available: true },
         { text: "Comunidad exclusiva y soporte", available: true },
-        { text: "Planes de dieta y comidas totalmente personalizados", available: true },
+        { text: "Seguimiento de progreso personalizado", available: true },
         { text: "Soporte de coach 1-a-1 (4 sesiones/mes)", available: true }
       ],
       buttonText: "Elegir Premium",

@@ -57,14 +57,14 @@ const Portfolio = () => {
             <div className="flex items-center gap-8 mb-8">
               <span className="text-6xl lg:text-8xl font-light text-gray-200">03</span>
               <h3 className="text-sm uppercase tracking-wider text-[#DA1035] font-medium">
-                Recent Works
+                Entrenamientos recientes
               </h3>
             </div>
           </div>
           <div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-white">
-              Here are some of our projects we done lately. Feel
-              free to check them out.
+              Aquí tienes algunos de los entrenamientos que hemos realizado recientemente. 
+              No dudes en revisarlos.
             </h1>
           </div>
         </div>
