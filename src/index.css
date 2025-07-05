@@ -8,7 +8,7 @@
   :root {
     /* Tema CLARO (Valores por defecto si no se aplica .dark) */
     /* Si tu app es mayormente oscura, puedes hacer que el fondo 'claro' también sea oscuro */
-    --background: 222.2 84% 4.9%; /* Este es el color base de Shadcn para el modo CLARO */
+    --background: 218 25% 9.6%; /* #14171b convertido a HSL para el modo CLARO */
     --foreground: 210 40% 98%;    /* Ajustado para texto blanco en fondo oscuro, si es necesario */
 
     --card: 0 0% 100%;

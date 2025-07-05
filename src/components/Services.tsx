@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"; // Ajusta la ruta de importación
+
 
 const Services = () => {
   const services = [
@@ -56,7 +58,7 @@ const Services = () => {
             <div>
               <p className="text-xl text-gray-500 leading-relaxed">
                 Como tu entrenador, te guiaré con un plan adaptado a tus objetivos, tu nivel y el equipo disponible, sin importar tu
-                punto de partida. Es 100% online, con el mismo compromiso y seguimiento personalizado que un entrenamiento presencial, 
+                punto de partida. Es 100% online, con el mismo compromiso y seguimiento personalizado que un entrenamiento presencial,
                 asegurando que alcances tus metas de forma efectiva y duradera.
               </p>
             </div>
@@ -66,22 +68,18 @@ const Services = () => {
         {/* Services grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-[#23272f] p-8 rounded-lg hover:shadow-lg transition-shadow duration-300 border border-[#23272f] hover:border-[#DA1035]"
-            >
-              {/* Service icon placeholder */}
-              <div className="w-16 h-16 bg-[#DA1035] rounded-lg mb-6 flex items-center justify-center">
-                <div className="w-8 h-8 bg-white rounded opacity-80"></div>
-              </div>
-
-              <h3 className="text-2xl font-light text-white mb-4">
-                {service.title}
-              </h3>
-
-              <p className="text-gray-400 leading-relaxed">
-                {service.description}
-              </p>
+            <div key={index}>
+              <Card className="bg-[#23272f] p-8 rounded-lg hover:shadow-lg transition-shadow duration-300 border border-[#23272f] hover:border-[#DA1035]">
+                <CardHeader>
+                  <div className="w-16 h-16 bg-[#DA1035] rounded-lg mb-6 flex items-center justify-center">
+                    <div className="w-8 h-8 bg-white rounded opacity-80"></div>
+                  </div>
+                  <CardTitle>{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>{service.description}</p>
+                </CardContent>
+              </Card>
             </div>
           ))}
         </div>

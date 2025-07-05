@@ -1,5 +1,7 @@
 import React from 'react';
 import { Check, X } from 'lucide-react';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"; // Ajusta la ruta de importación
+
 
 const Subscriptions = () => {
   const plans = [
@@ -66,36 +68,38 @@ const Subscriptions = () => {
         {/* Pricing Plans */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
-            <div key={index} className="bg-gray-900 p-8 rounded-lg flex flex-col justify-between">
-              <div>
-                <h2 className="text-3xl font-semibold mb-4 text-white">
-                  {plan.name}
-                </h2>
-                <p className="text-gray-400 mb-6">{plan.description}</p>
-                <div className="text-white mb-6">
-                  <span className="text-5xl font-bold">{plan.price}</span>
-                  <span className="text-xl text-gray-400">{plan.period}</span>
-                </div>
-
-                <ul className="mb-8 space-y-3">
-                  {plan.features.map((feature, featIndex) => (
-                    <li key={featIndex} className={`flex items-center ${feature.available ? 'text-gray-200' : 'text-gray-600 line-through'}`}>
-                      {feature.available ? (
-                        <Check size={20} className="text-[#DA1035] mr-2 flex-shrink-0" />
-                      ) : (
-                        <X size={20} className="text-gray-600 mr-2 flex-shrink-0" />
-                      )}
-                      {feature.text}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <a
-                href="#"
-                className={`w-full text-white py-3 px-6 rounded text-lg font-medium text-center transition-colors duration-200 ${plan.buttonClass}`}
-              >
-                {plan.buttonText}
-              </a>
+            <div key={index}>
+              <Card className="h-full bg-gray-900 p-8 rounded-lg flex flex-col justify-between">
+                <CardHeader>
+                  <CardTitle className="text-3xl font-semibold mb-4 text-white" >{plan.name}</CardTitle>
+                  <CardDescription className="text-gray-400 mb-6">{plan.description}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="text-white mb-6">
+                    <span className="text-5xl font-bold">{plan.price}</span>
+                    <span className="text-xl text-gray-400">{plan.period}</span>
+                  </div>
+                  <ul className="mb-8 space-y-3">
+                    {plan.features.map((feature, featIndex) => (
+                      <li key={featIndex} className={`flex items-center ${feature.available ? 'text-gray-200' : 'text-gray-600 line-through'}`}>
+                        {feature.available ? (
+                          <Check size={20} className="text-[#DA1035] mr-2 flex-shrink-0" />
+                        ) : (
+                          <X size={20} className="text-gray-600 mr-2 flex-shrink-0" />
+                        )}
+                        {feature.text}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+                <CardFooter>
+                  <a
+                    href="#"
+                    className={`w-full text-white py-3 px-6 rounded text-lg font-medium text-center transition-colors duration-200 ${plan.buttonClass}`}>
+                    {plan.buttonText}
+                  </a>
+                </CardFooter>
+              </Card>
             </div>
           ))}
         </div>
