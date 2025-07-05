@@ -72,42 +72,29 @@ const Portfolio = () => {
         {/* Portfolio grid */}
         <div className="grid md:grid-cols-2 gap-0">
           {projects.map((project, index) => (
-            <div key={index} className="group relative bg-gray-100 aspect-[4/3] overflow-hidden border border-gray-200">
+            <div key={index} className="group relative bg-gray-100 aspect-[4/3] overflow-hidden">
               {/* Project image */}
               <div className="w-full h-full bg-gradient-to-br from-orange-400 to-red-500 opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
               
               {/* Project overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center">
-                <div className="text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-8">
-                  <div className="text-sm uppercase tracking-wider text-orange-400 mb-2">
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-left justify-left">
+                <div className="w-full grid grid-rows-[0.25fr_0.25fr_2fr] text-left text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-8">
+                  <div className="text-sm items-baseline uppercase tracking-wider text-orange-400 mb-2">
                     {project.category}
                   </div>
-                  <h4 className="text-2xl font-light mb-4">
+                  <h4 className="text-2xl items-baseline font-light mb-4">
                     {project.title}
                   </h4>
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    {project.description}
-                  </p>
                   <a 
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 transition-colors duration-200"
+                    className="inline-flex items-end gap-2 text-orange-400 hover:text-orange-300 transition-colors duration-200"
                   >
                     Project Link
                     <ExternalLink size={16} />
                   </a>
                 </div>
-              </div>
-
-              {/* Project info - visible on mobile */}
-              <div className="absolute bottom-0 left-0 right-0 bg-white p-6 md:hidden">
-                <div className="text-sm uppercase tracking-wider text-orange-500 mb-1">
-                  {project.category}
-                </div>
-                <h4 className="text-xl font-light text-gray-900">
-                  {project.title}
-                </h4>
               </div>
             </div>
           ))}
