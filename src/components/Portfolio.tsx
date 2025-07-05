@@ -5,45 +5,39 @@ import { ExternalLink } from 'lucide-react';
 const Portfolio = () => {
   const projects = [
     {
-      title: 'The Red Wheel',
-      category: 'Branding',
-      image: '/placeholder.svg',
-      description: 'Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.',
+      title: 'Entrenamiento de Resistencia',
+      category: 'Fuerza y Resistencia',
+      image: '/images/carousel/1.jpeg',
       link: 'https://www.behance.net/'
     },
     {
-      title: 'Music Life',
-      category: 'Frontend Design',
-      image: '/placeholder.svg',
-      description: 'Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.',
+      title: 'Rutina de Cardio Intensivo',
+      category: 'Cardio',
+      image: '/images/carousel/2.jpeg',
       link: 'https://www.behance.net/'
     },
     {
-      title: 'OI Logo',
-      category: 'Branding',
-      image: '/placeholder.svg',
-      description: 'Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.',
+      title: 'Sesión de Yoga Deportivo',
+      category: 'Flexibilidad',
+      image: '/images/carousel/3.jpeg',
       link: 'https://www.behance.net/'
     },
     {
-      title: 'Corrugated Sheets',
-      category: 'Frontend Design',
-      image: '/placeholder.svg',
-      description: 'Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.',
+      title: 'Entrenamiento Funcional',
+      category: 'Funcional',
+      image: '/images/carousel/2.jpeg',
       link: 'https://www.behance.net/'
     },
     {
-      title: 'Woodcraft',
-      category: 'Frontend Design',
-      image: '/placeholder.svg',
-      description: 'Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.',
+      title: 'Preparación para Maratón',
+      category: 'Resistencia',
+      image: '/images/carousel/1.jpeg',
       link: 'https://www.behance.net/'
     },
     {
-      title: 'The Lamp',
-      category: 'Frontend Design',
-      image: '/placeholder.svg',
-      description: 'Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.',
+      title: 'Entrenamiento HIIT',
+      category: 'Alta Intensidad',
+      image: '/images/carousel/3.jpeg',
       link: 'https://www.behance.net/'
     }
   ];
@@ -72,12 +66,16 @@ const Portfolio = () => {
         {/* Portfolio grid */}
         <div className="grid md:grid-cols-2 gap-0">
           {projects.map((project, index) => (
-            <div key={index} className="group relative bg-gray-100 aspect-[4/3] overflow-hidden">
+            <div key={index} className="group relative bg-black-100 aspect-[4/3] overflow-hidden">
               {/* Project image */}
-              <div className="w-full h-full bg-gradient-to-br from-orange-400 to-red-500 opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-              
+              <div className="w-full h-full group-hover:opacity-30 transition-opacity duration-300"> 
+                <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"/>
+              </div>
               {/* Project overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-left justify-left">
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-left justify-left">
                 <div className="w-full grid grid-rows-[0.25fr_0.25fr_2fr] text-left text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-8">
                   <div className="text-sm items-baseline uppercase tracking-wider text-orange-400 mb-2">
                     {project.category}
