@@ -1,31 +1,8 @@
 import React from 'react';
 
-const About = () => {
-  const processes = [
-    {
-      title: 'Evaluación Personalizada',
-      description:
-        'Analizo tus objetivos, necesidades y condición física para establecer una base sólida y realista. Cada persona es única, por eso el primer paso es conocerte bien.'
-    },
-    {
-      title: 'Planificación a Medida',
-      description:
-        'Diseño un plan de entrenamiento personalizado, adaptado a tu perfil y metas. Busco que sea realista, sostenible y que se ajuste a tu día a día.'
-    },
-    {
-      title: 'Acompañamiento',
-      description:
-        'Te acompaño en la ejecución del plan, corrigiendo técnica y ajustando el proceso según avances. El foco está en progresar con seguridad y constancia.'
-    },
-    {
-      title: 'Resultados',
-      description:
-        'Celebramos tus logros y consolidamos hábitos para que los resultados sean duraderos. El objetivo es que entrenes con propósito y vivas con fuerza.'
-    }
-  ];
-
+const About: React.FC = () => {
   return (
-    <section id="about" className="bg-[#14171b] py-20 lg:py-32">
+    <section id="about" className="bg-[#14171b] items-center py-20 lg:py-32">
       {/* Horizontal line */}
       <div className="w-full h-px bg-[#14171b] mb-20"></div>
 
@@ -61,20 +38,6 @@ const About = () => {
               className="rounded-lg aspect-[4/5] w-[90%] object-cover"
             />
             </div>
-        </div>
-
-        {/* Process items */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {processes.map((process, index) => (
-            <div key={index} className="space-y-4">
-              <h3 className="text-2xl font-light text-white mb-4">
-                {process.title}
-              </h3>
-              <p className="text-gray-500 leading-relaxed">
-                {process.description}
-              </p>
-            </div>
-          ))}
         </div>
       </div>
     </section>
