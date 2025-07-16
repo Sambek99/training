@@ -13,7 +13,7 @@ const Portfolio = () => {
     {
       title: 'Rutina de Cardio Intensivo',
       category: 'Cardio',
-      image: '/images/carousel/2.jpeg',
+      image: '/images/portafolio/1.jpg',
       link: 'https://www.behance.net/'
     },
     {
@@ -25,19 +25,19 @@ const Portfolio = () => {
     {
       title: 'Entrenamiento Funcional',
       category: 'Funcional',
-      image: '/images/carousel/2.jpeg',
+      image: '/images/portafolio/2.JPG',
       link: 'https://www.behance.net/'
     },
     {
       title: 'Preparación para Maratón',
       category: 'Resistencia',
-      image: '/images/carousel/1.jpeg',
+      image: '/images/portafolio/3.jpg',
       link: 'https://www.behance.net/'
     },
     {
       title: 'Entrenamiento HIIT',
       category: 'Alta Intensidad',
-      image: '/images/carousel/3.jpeg',
+      image: '/images/portafolio/4.jpg',
       link: 'https://www.behance.net/'
     }
   ];
@@ -49,16 +49,15 @@ const Portfolio = () => {
         <div className="grid lg:grid-cols-2 gap-16 mb-20">
           <div>
             <div className="flex items-center gap-8 mb-8">
-              <span className="text-6xl lg:text-8xl font-light text-gray-200">03</span>
+              <span className="text-6xl lg:text-8xl font-light text-gray-200">04</span>
               <h3 className="text-sm uppercase tracking-wider text-[#DA1035] font-medium">
-                Entrenamientos recientes
+                Formación
               </h3>
             </div>
           </div>
           <div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-white">
-              Aquí tienes algunos de los entrenamientos que hemos realizado recientemente. 
-              No dudes en revisarlos.
+            <h1 className="text-3xl md:text-5xl lg:text-5xl font-light leading-tight text-white">
+              Aquí encontrarás algunos de los talleres y capacitaciones que he realizado a lo largo de mi carrera. ¡No dudes en revisarlos!
             </h1>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="bg-[#14171b] items-center py-20 lg:py-32">
+    <section id="about" className="bg-[#14171b] items-center py-20 lg:py-8">
       {/* Horizontal line */}
       <div className="w-full h-px bg-[#14171b] mb-20"></div>
 
@@ -21,12 +21,12 @@ const About: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-16 mb-20">
           {/* Left column - Text */}
           <div className="space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-white">
-              ¡Hola! Soy Richard Jiménez, entrenador con experiencia y formación en entrenamiento deportivo, funcional y musculación.
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-light leading-tight text-white">
+              ¡Hola! Soy Alain, entrenador con experiencia y formación en entrenamiento deportivo, funcional y musculación.
             </h1>
 
             <p className="text-xl text-gray-500 leading-relaxed">
-              Trabajo con personas que buscan mejorar su rendimiento, ganar fuerza, verse mejor o recuperar su salud a través del movimiento. Cada plan es personalizado y pensado para que progreses con seguridad y logres resultados duraderos.
+              Trabajo con personas que buscan mejorar su rendimiento, fuerza o salud. Con objetivos claros y medibles para avanzar de forma segura y alcanzar resultados duraderos.
             </p>
           </div>
 

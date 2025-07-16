@@ -27,12 +27,12 @@ const Index = () => {
         <Services />
       </AnimatedComponent>
 
-      <AnimatedComponent>
-        <Portfolio />
+       <AnimatedComponent>
+        <Clients />
       </AnimatedComponent>
 
       <AnimatedComponent>
-        <Clients />
+        <Portfolio />
       </AnimatedComponent>
 
       <AnimatedComponent>

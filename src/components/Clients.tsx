@@ -6,77 +6,54 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 const Subscriptions = () => {
   const plans = [
     {
-      name: "Plan Básico",
-      price: "$20",
-      period: "/mes",
-      description: "Ideal para personas que inician su viaje fitness.",
+      name: "Cotiza tu planificación",
+      period: "",
+      description: "Acordemos las sesiones que necesitas para alcanzar tus objetivos.",
+      encodedMessage: encodeURIComponent("¡Hola! Estoy interesado en el servicio de Entrenamiento online perzonalizado. ¿Podrías darme más información?"),
       features: [
-        { text: "Acceso a rutinas básicas de entrenamiento", available: true },
-        { text: "Consejos de fitness mensuales por Whatsapp", available: true },
-        { text: "Acceso al foro de la comunidad", available: true },
-        { text: "Seguimiento de progreso mensual", available: false },
-        { text: "Soporte de coach 1-a-1", available: false }
+        { text: "Programas 100% online personalizados", "available": true },
+        { text: "Modalidad híbrida (online + presencial)", "available": true },
+        { text: "Evaluación inicial y seguimiento continuo", "available": true },
+        { text: "Planificación adaptada a tus objetivos y nivel", "available": true },
+        { text: "Acceso a tu entrenador para dudas y ajustes", "available": true }
       ],
-      buttonText: "Elegir Básico",
+      buttonText: "Cotizalo ahora",
       buttonClass: "bg-gray-700 hover:bg-gray-800"
     },
-    {
-      name: "Plan Pro",
-      price: "$30",
-      period: "/mes",
-      description: "Perfecto para quienes buscan intensificar su entrenamiento.",
-      features: [
-        { text: "Acceso a todas las rutinas de entrenamiento", available: true },
-        { text: "Consejos avanzados de fitness semanales", available: true },
-        { text: "Soporte prioritario en la comunidad", available: true },
-        { text: "Seguimiento de progreso semanal", available: true },
-        { text: "Soporte de coach 1-a-1 (2 sesiones/mes)", available: false }
-      ],
-      buttonText: "Elegir Pro",
-      buttonClass: "bg-[#DA1035] hover:bg-[#B30D2B]"
-    },
-    {
-      name: "Plan Premium",
-      price: "$40",
-      period: "/mes",
-      description: "Para personas dedicadas que buscan apoyo y guía total.",
-      features: [
-        { text: "Acceso a todas las rutinas de entrenamiento", available: true },
-        { text: "Consejos e insights avanzados diarios", available: true },
-        { text: "Comunidad exclusiva y soporte", available: true },
-        { text: "Seguimiento de progreso personalizado", available: true },
-        { text: "Soporte de coach 1-a-1 (4 sesiones/mes)", available: true }
-      ],
-      buttonText: "Elegir Premium",
-      buttonClass: "bg-gray-700 hover:bg-gray-800"
-    }
   ];
 
   return (
     <section id="subscriptions" className="bg-[#14171b] py-20 lg:py-32 text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        {/* Main heading */}
-        <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight max-w-4xl mx-auto">
-            Encuentra el Plan Perfecto para tu Viaje Fitness
-          </h1>
-          <p className="mt-4 text-lg text-gray-400">
-            Elige una suscripción que se adapte a tus objetivos y nivel de apoyo.
-          </p>
-        </div>
+        <div className="mb-20">
+          <div className="flex items-center gap-8 mb-12">
+            <span className="text-6xl lg:text-8xl font-light text-gray-200">03</span>
+            <h3 className="text-sm uppercase tracking-wider text-[#DA1035] font-medium">
+              Entrenamiento online perzonalizado
+            </h3>
+          </div>
 
+          <div className="gap-16">
+            <div>
+              <h1 className="text-4xl md:text-5xl lg:text-4xl font-light leading-tight text-white">
+                Recibirás un plan 100% online personalizado según tus objetivos, nivel y equipo disponible.
+                Con coaching 1 a 1 y seguimiento constante, entrenaras con el mismo compromiso que en lo
+                presencial. Avanzaras con seguridad y lograras resultados duraderos.
+              </h1>
+            </div>
+          </div>
+        </div>
         {/* Pricing Plans */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="lg:place-items-center gap-8">
           {plans.map((plan, index) => (
             <div key={index}>
-              <Card className="h-full bg-gray-900 p-8 rounded-lg flex flex-col justify-between">
+              <Card className="h-full w-full bg-gray-900 p-8 rounded-lg flex flex-col justify-between">
                 <CardHeader>
                   <CardTitle className="text-3xl font-semibold mb-4 text-white" >{plan.name}</CardTitle>
                   <CardDescription className="text-gray-400 mb-6">{plan.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="text-white mb-6">
-                    <span className="text-5xl font-bold">{plan.price}</span>
                     <span className="text-xl text-gray-400">{plan.period}</span>
                   </div>
                   <ul className="mb-8 space-y-3">
@@ -94,7 +71,8 @@ const Subscriptions = () => {
                 </CardContent>
                 <CardFooter>
                   <a
-                    href="#"
+                    href={`https://wa.me/593983647509?text=${plan.encodedMessage}`}
+                    target="_blank"
                     className={`w-full text-white py-3 px-6 rounded text-lg font-medium text-center transition-colors duration-200 ${plan.buttonClass}`}>
                     {plan.buttonText}
                   </a>

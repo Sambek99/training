@@ -84,17 +84,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* Back to top */}
-        <div className="mt-16 pt-8 text-center">
-          <a 
-            href="#top" 
-            className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-200 group"
-          >
-            <ChevronUp size={20} className="group-hover:-translate-y-1 transition-transform duration-200" />
-            <span className="text-sm uppercase tracking-wider">Top</span>
-          </a>
-        </div>
       </div>
     </footer>
   );

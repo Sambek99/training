@@ -17,7 +17,7 @@ const frases = [
   { description: 'Fuerza real. Movimiento consciente. Resultados duraderos.' },
   { description: 'No es solo ejercicio. Es evolución personal.' },
   { description: 'Tu cuerpo cambia cuando tu propósito es claro.' },
-  { description: 'Entrena desde donde estés. Progrésate desde adentro.' },
+  { description: 'Accede a tu mejor versión desde cualquier lugar.' },
   { description: 'Físico fuerte. Mente clara. Vida alineada.' },
   { description: 'Lo online también transforma, si hay propósito.' }
 ];
@@ -26,6 +26,7 @@ const heroBackgroundImages = [
   { src: '/images/carousel/1.jpeg', alt: 'Alain sentado' },
   { src: '/images/carousel/2.jpeg', alt: 'Alain retrado' },
   { src: '/images/carousel/3.jpeg', alt: 'Alain retrado' },
+  { src: '/images/carousel/4.jpg', alt: 'Alain retrado' },
 ];
 
 const Hero = () => {
