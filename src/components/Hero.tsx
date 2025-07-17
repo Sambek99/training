@@ -73,7 +73,7 @@ const Hero = () => {
             {heroBackgroundImages.map((image, index) => (
               <CarouselItem key={index} className="h-full">
                 {/* SIN el 'relative' en este div, ya que la imagen no es 'absolute' */}
-                <div className="w-full h-full relative">
+                <div className="w-full h-full">
                   <img
                   src={image.src}
                   alt={image.alt}

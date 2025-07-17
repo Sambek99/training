@@ -33,7 +33,7 @@ const About: React.FC = () => {
           {/* Right column - Photo */}
             <div className="relative flex justify-center items-center">
             <img
-              src="/images/alain-jimenez-hero.jpeg"
+              src="/images/alain-jimenez-hero2.jpeg"
               alt="Photo by Alain Jimenez"
               className="rounded-lg aspect-[4/5] w-[90%] object-cover"
             />

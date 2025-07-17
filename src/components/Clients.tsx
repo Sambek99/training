@@ -36,9 +36,10 @@ const Subscriptions = () => {
           <div className="gap-16">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-4xl font-light leading-tight text-white">
-                Recibirás un plan 100% online personalizado según tus objetivos, nivel y equipo disponible.
-                Con coaching 1 a 1 y seguimiento constante, entrenaras con el mismo compromiso que en lo
-                presencial. Avanzaras con seguridad y lograras resultados duraderos.
+                Si deseas un plan 100% online, totalmente personalizado según tus objetivos, nivel y el equipo 
+                que tengas disponible, puedes acceder a nuestras asesorías. Cotiza nuestro servicio coaching 1 
+                a 1 y seguimiento constante, para que entrenes con el mismo compromiso que en un programa presencial.
+                Avanzarás con seguridad y alcanzarás resultados duraderos.
               </h1>
             </div>
           </div>
